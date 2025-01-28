@@ -244,5 +244,12 @@ Tape: 00#101
 ```
 The answer is: 101
 ### - Description
-In this part of View we can talk about wild life park and history
+In this string, there is a separator (#)
+which is on the left side of the separator for a number in base 8 and on the right side of the location for a number in base 3.
+As you can see in the algorithm, our head first goes to the beginning of the numbers on the left (base 8 numbers) and subtracts one unit.
+And after subtracting (if that number is not 0, because if the desired number is 0, when it subtracts it, that number becomes 7.
+
+It continues its movement towards the end of the string (left side) to subtract one unit from a number other than zero) and goes to the string on the right (base 3 number) and adds one unit to it.
+
+In this section, if it encounters the number 2 and adds one unit, that number will become 0 and this movement will continue until it reaches a number other than 2 and adds one unit to it and then reaches the left part (base 8 numbers) again.
 
